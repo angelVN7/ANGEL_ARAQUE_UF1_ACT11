@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ANGEL_ARAQUE_UF1_ACT10</string>
+    <string name="nom">Nom</string>
+    <string name="cognom">Cognom</string>
+    <string name="edat">Edat</string>
+    <string name="usuari">Usuari</string>
+    <string name="registre">Enviar</string>
+    <string name="password">Password</string>
+    <string name="constraint_layout">Constraint Layout</string>
+    <string name="relative_layout">Relative Layout</string>
+    <string name="linear_layout">Linear Layout</string>
+    <string name="email">Email</string>
+    <string name="telefon">telèfon</string>
+    <string name="hombre">Home</string>
+    <string name="mujer">Dona</string>
+</resources>
