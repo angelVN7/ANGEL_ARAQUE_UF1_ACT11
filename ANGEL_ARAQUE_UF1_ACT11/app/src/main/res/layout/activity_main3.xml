@@ -17,8 +17,9 @@
             android:id="@+id/nombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="80dp"
             android:ems="10"
+            android:minHeight="48dp"
             android:hint="@string/nom"
             android:inputType="text"
             android:textSize="20sp"
@@ -30,8 +31,10 @@
             android:id="@+id/apellido"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
             android:ems="10"
             android:hint="@string/cognom"
+            android:minHeight="48dp"
             android:inputType="text"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -42,7 +45,9 @@
             android:id="@+id/edad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
             android:ems="10"
+            android:minHeight="48dp"
             android:hint="@string/edat"
             android:inputType="number"
             android:textSize="20sp"
@@ -54,8 +59,9 @@
             android:id="@+id/usuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="24dp"
             android:ems="10"
+            android:minHeight="48dp"
             android:hint="@string/usuari"
             android:inputType="text"
             android:textSize="20sp"
@@ -67,7 +73,9 @@
             android:id="@+id/contrasenya"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
             android:ems="10"
+            android:minHeight="48dp"
             android:hint="@string/password"
             android:inputType="textPassword"
             android:textSize="20sp"
@@ -79,16 +87,18 @@
             android:id="@+id/registro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
             android:text="@string/registre"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+            app:layout_constraintTop_toBottomOf="@+id/phone" />
 
         <Button
             android:id="@+id/LinearButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
             android:text="@string/linear_layout"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -108,8 +118,8 @@
         <RadioGroup
             android:id="@+id/radioGroup"
             android:layout_width="216dp"
-            android:layout_height="90dp"
-            android:layout_marginTop="16dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="32dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/contrasenya">
@@ -129,10 +139,11 @@
         </RadioGroup>
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/email"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            android:autofillHints=""
             android:ems="10"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
@@ -142,16 +153,17 @@
             app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
         <EditText
-            android:id="@+id/editTextPhone"
+            android:id="@+id/phone"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
             android:ems="10"
             android:hint="@string/telefon"
             android:inputType="phone"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+            app:layout_constraintTop_toBottomOf="@+id/email" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
